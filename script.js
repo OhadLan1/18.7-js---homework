@@ -19,7 +19,7 @@ function handleClick() {
   if (
     nameInput.value.length > 2 &&
     ageInput.value > 0 &&
-    countryInput.value.length > 0
+    countryInput.value.length > 1
   ) {
     infoCard.innerHTML +=
       '<div  class="card" style="width: 18rem; background-color:' +
@@ -38,11 +38,7 @@ function handleClick() {
       `</li>
     </ul>
   </div>`;
-    // infoCard.style.background = colorInput.value;
-    // const div = infoCard.children[counter];
-    // div.style.backgroundColor = colorInput.value;
-    // counter++;
-  }
+    
+  } else window.alert("Invalid answer");
   clearInputs();
-  // console.log(infoCard.children[counter]);
 }
